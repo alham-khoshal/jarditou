@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <div id="error"></div>
+    <form id="form" action=" http://bienvu.net/script.php" method="GET">    
+        <h4 id="zone">Ces zones sont obligatoires</h4>
+        <br>
+        <br>	
+        <fieldset>
+        <legend> <h2>vos Coordonnées</h2></legend>
+        <br>
+        <form action=" http://bienvu.net/script.php" method="post" id="formulaire_contact"> 
+            <h4> Votre Nom: <input id="nom" type="text" name="nom"></h4> 
+            <h4>Votre prénom: <input id="prenom" type="text" name="prenom"></h4> 
+            <h4>sexe: <p>Féminin</p>
+                <input id="radio" type="radio" name="radio" value="Rouge" ><p>Masculin</p> 
+                <input id="radio" type="radio" name="radio" value="Vert"></h4>    
+        <h4> Date de naissance:    
+        <input id="date" type="date" name="ddn" placeholder="jj/mm/aaaa"> 
+        </h4> 
+        <h4> Code postal: <input id="codepostal" type="number" name="codepostal"></h4> 
+        <h4>Addresse:<input id="Addresse" type="text" name="Addresse"></h4>
+        <h4>Ville:<input id="Ville" type="text" name="Ville"></h4>
+        <h4>Email:<input id="Email" type="Email" name="Email" placeholder="email@exmple.ex"></h4>
+        </fieldset>
+        <fieldset>
+            <legend> <h2>Votre demande</h2> </legend>
+            <h4>sujet:<select id="sujet" name="sujet">  
+                <option value="Bleu">bugs</option>  
+                <option value="Rouge">Rhuhiu</option>
+                <option value="Vert" selected>Mes commandes</option>
+                <option value="gren">green</option>
+                </select>
+            </h4>
+            <h4>Votre question: <textarea id="text" name="text" rows="10" cols="50"></textarea></h4>
+            <button type="submit"> Envoyer</button> <button>Annuler</button>
+        </fieldset></form>
+    </div>
+        <h4><input type="checkbox" name="couleur3" value="Vert" > J'accepte le traitement informatique de ce formulaire</h4>
+</body>
+</html>
